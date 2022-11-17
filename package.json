@@ -1,0 +1,19 @@
+{
+  "name": "gulu-ui",
+  "version": "1.0.0",
+  "description": "这是一个vue ui 组件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:ygxqz/gulu-ui.git"
+  },
+  "keywords": [
+    "vue",
+    "ui"
+  ],
+  "author": "kdj",
+  "license": "MIT"
+}
