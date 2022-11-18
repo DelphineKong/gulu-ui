@@ -2,6 +2,9 @@
 /shelf/
 /workspace.xml
 /node_modules
+<<<<<<< HEAD:.gitignore
 /.idea
+=======
+>>>>>>> c4dff0855f7d224a826fdc6e78b885b56a826386:.idea/.gitignore
 # Editor-based HTTP Client requests
 /httpRequests/
