@@ -17,6 +17,6 @@
   "author": "kdj",
   "license": "MIT",
   "dependencies": {
-    "vue": "^3.2.45"
+    "vue": "^2.5.17"
   }
 }
