@@ -4,5 +4,6 @@
 /node_modules
 /.idea
 /dist
+/.cache
 # Editor-based HTTP Client requests
 /httpRequests/
