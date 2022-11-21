@@ -17,7 +17,9 @@ new Vue({
 
 //单元测试
 import chai from 'chai'
+import spies from 'chai-spies'
 
+chai.use(spies)
 const expect = chai.expect
 //
 {
@@ -62,7 +64,7 @@ const expect = chai.expect
     })
     vm.$mount(div)
     let svg = vm.$el.querySelector('svg')
-    let order = window.getComputedStyle(svg)
+    let order = window.getComputedStyle(svg).order
     expect(order).to.eq('1')
     vm.$el.remove()
     vm.$destroy()
@@ -80,7 +82,7 @@ const expect = chai.expect
     })
     vm.$mount(div)
     let svg = vm.$el.querySelector('svg')
-    let order = window.getComputedStyle(svg)
+    let order = window.getComputedStyle(svg).order
     expect(order).to.eq('2')
     vm.$el.remove()
     vm.$destroy()
@@ -94,9 +96,12 @@ const expect = chai.expect
         }
     })
     vm.$mount()
-    vm.on('click', function () {
-        console.log(1)
+    //函数mock
+    let spy = chai.spy(function () {
     })
+    vm.$on('click', spy)
+    //希望这个函数执行
     let button = vm.$el
     button.click()
+    expect(spy).to.have.been.called()
 }

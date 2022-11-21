@@ -17,6 +17,7 @@
   "author": "kdj",
   "license": "MIT",
   "dependencies": {
+    "chai-spies": "^1.0.0",
     "vue": "^2.5.17",
     "vue-hot-reload-api": "^2.3.4"
   },
